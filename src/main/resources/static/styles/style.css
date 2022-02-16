@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 400px;
+    min-height: 550px;
+    margin: 80px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: rgb(255, 210, 210);
+    border-radius: 20px;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff
+}
+
+.wrapper .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.wrapper .container span {
+    font-size: 3em;
+    color: darkmagenta;
+}
+
+.name {
+    font-family: 'Courgette', cursive;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 8%;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+    margin-left: 15px;
+    color: rgb(5, 10, 80);
+    text-shadow: 2px 2px #f7b2de;
+}
+
+.container .btn {
+    align-items: center;
+    background-image: radial-gradient(100% 100% at 100% 0, #ffd95a 0, #ff9854 100%);
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    transition: box-shadow .15s, transform .15s;
+    touch-action: manipulation;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+}
+
+.container .btn:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.container .btn:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.container .btn:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+.box {
+    position: absolute;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #004882;
+    font-family: 'Redressed', cursive;
+}
+
+.box select {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    width: 250px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 25px rgba(173, 21, 21, 0.2);
+    outline: none;
+}
+
+.box::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+    padding: 30px;
+}
+
+.btnContainer {
+    margin: 100px 80px 80px;
+}
+
+.btnContainer .btn {
+    width: 100%;
+    height: 50px;
+    background-color: crimson;
+    border-radius: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(35, 65, 66, 0.4) 0 2px 4px, rgba(35, 61, 66, 0.3) 0 7px 13px -3px, rgba(58, 111, 107, 0.5) 0 -3px 0 inset;
+}
+
+.btnContainer .btn:hover {
+    background-color: rgb(226, 94, 120);
+}
+
+
+/** Modal Styling **/
+
+.col .btn {
+    background-color: #3c4fe0;
+    margin: 10px;
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-group input[type="file"] {
+    font-family: 'Redressed', cursive;
+    font-size: 16px;
+    color: rgb(107, 5, 25)
+}
+
+.modal-title {
+    font-family: 'Courgette', cursive;
+    font-weight: 800;
+    font-size: 24px;
+    color: rgb(172, 44, 12)
+}
+
+.modal-dialog {
+    border-radius: 20px;
+    box-shadow: 13px 13px 20px #cec8b6, -13px -13px 20px rgb(194, 170, 126)
+}
+
+.modal-header {
+    background-color: rgb(210, 245, 255);
+}
+
+.modal-body {
+    background-color: rgb(252, 255, 210);
+}
