@@ -32,7 +32,7 @@ public class CsvService {
         System.out.println("Got File " + file.getContentType());
         List<CsvDocument> documentList = CsvManager.parseCsvToDocument(file);
         csvDocumentRepository.saveAllAndFlush(documentList);
-        CsvFile csvFile = new CsvFile(file.getName(), documentList);
+        CsvFile csvFile = new CsvFile(file.getOriginalFilename(), documentList);
         csvFileRepository.save(csvFile);
     }
 
@@ -43,12 +43,11 @@ public class CsvService {
                 .collect(Collectors.toList());
     }
 
-    public InputStream getCsvDocument(String fileName) {
+    public List<CsvDocument> getCsvDocument(String fileName) {
         List<List<CsvDocument>> documentList = csvFileRepository
                 .findById(fileName).stream()
                 .map(CsvFile::getDocumentList)
                 .collect(Collectors.toList());
-        String parsedCSV = CsvManager.parseDocumentToCsv(documentList.get(0));
-        return new ByteArrayInputStream(parsedCSV.getBytes(StandardCharsets.UTF_8));
+        return documentList.get(0);
     }
 }
