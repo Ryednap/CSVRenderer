@@ -47,7 +47,7 @@
             <div class="box">
                 <!--suppress HtmlFormInputWithoutLabel -->
                 <select>
-                    <option></option>
+                    <option th:each="doc: ${files}" th:value="${doc}" th:text="${doc}"></option>
                 </select>
             </div>
             <!-- View Button -->
