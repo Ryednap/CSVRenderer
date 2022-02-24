@@ -1,6 +1,20 @@
+/**
+ * @author Ujjwal Pandey
+ * @version 1.2
+ * @since 02-10-2022
+ */
+
 package com.fossee.csvmanager.model;
 
 import javax.persistence.*;
+
+
+/**
+ * Each CSV File contains rows of data. Each row of that file is document in this web-application. That document is represented
+ * by this DataStructure and stored in MYSQL database as "documents" table.
+ * <br><br>
+ * This is a basic dataStructure with basic fields, getters and setters no logic
+ */
 
 @Entity(name="Documents")
 @Table(name="documents")
