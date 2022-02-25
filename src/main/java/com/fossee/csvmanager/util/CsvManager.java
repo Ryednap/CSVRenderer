@@ -146,8 +146,6 @@ public class CsvManager {
             throw new RuntimeException("Error Parsing CSV File " + ie.getMessage());
         }
 
-        // debug
-        System.out.println("Parsed Document: \n" + documents);
         return documents;
     }
 

@@ -56,7 +56,7 @@ public class CsvService {
         List<CsvDocument> documentList = CsvManager.parseCsvToDocument(file);
 
         // save all the individual csvDocument of the list and flush the content
-        csvDocumentRepository.saveAllAndFlush(documentList);
+        csvDocumentRepository.saveAll(documentList);
 
         // create and save the CsvFile with respective file name, and it's document list as content
         CsvFile csvFile = new CsvFile(file.getOriginalFilename(), documentList);

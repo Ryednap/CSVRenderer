@@ -1,8 +1,20 @@
+/**
+ * @author Ujjwal Pandey
+ * @version 1.2
+ * @since 02-12-2022
+ */
+
+
 package com.fossee.csvmanager.util;
 
 
 import org.springframework.stereotype.Component;
 
+
+/**
+ * At view level we have html option menu where user selects one of the csv file name from the list.
+ * This class maps to that chosenFileName attribute.
+ */
 
 @Component
 public class FileForm {
