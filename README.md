@@ -3,7 +3,13 @@ Java Web application based on SpringBoot, Hibernate, Thymeleaf, HTML and CSS
 to read, store and Render CSV Files. The project uses Jackson FasterXML CSV parser to parse the csv files and store 
 in database.
 
-For demonstration [Demo]()
+For demonstration [Demo](https://drive.google.com/file/d/1VJbaH96z1AkvHZSQ_IfaeXS5nslTBmfo/view?usp=sharing)
+
+#### UML data model
+
+<div>
+    <img src="./docs/uml.drawio.png" height="212" width="412">
+</div>
 
 ## Directory Structure
 
