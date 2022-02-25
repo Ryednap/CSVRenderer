@@ -55,7 +55,7 @@ For demonstration [Demo](https://drive.google.com/file/d/1VJbaH96z1AkvHZSQ_IfaeX
 # Building
 
 Clone this project and ```cd CSVRenderer``` and then open the project in your favourite IDE. The IDE will
-build the maven project or if you have ```maven``` installed in your local system. Then from command line
+build the maven project. Alternatively, if you have ```maven``` installed in your local system, then from command line
 ```cd CSVRenderer``` and then run ``` maven clean install ```
 
 # Features and Output
