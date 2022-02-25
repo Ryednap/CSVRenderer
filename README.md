@@ -8,7 +8,7 @@ For demonstration [Demo](https://drive.google.com/file/d/1VJbaH96z1AkvHZSQ_IfaeX
 #### UML data model
 
 <div>
-    <img src="./docs/uml.drawio.png" height="212" width="412">
+    <img src="./docs/uml.drawio.png" height="250" width="430">
 </div>
 
 ## Directory Structure
