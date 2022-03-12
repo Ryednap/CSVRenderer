@@ -56,7 +56,7 @@ For demonstration [Demo](https://drive.google.com/file/d/1VJbaH96z1AkvHZSQ_IfaeX
 
 Clone this project and ```cd CSVRenderer``` and then open the project in your favourite IDE. The IDE will
 build the maven project. Alternatively, if you have ```maven``` installed in your local system, then from command line
-```cd CSVRenderer``` and then run ``` mvn clean install ```
+```cd CSVRenderer``` and then run ``` mvn clean install ```. After that open ```resources/application.properties``` and you need to configure local MYSQL URL, after that we can now run the application on our local computer.
 
 # Features and Output
 
